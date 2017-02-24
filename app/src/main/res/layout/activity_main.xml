@@ -10,8 +10,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.rex.gameapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <Button
+        android:text="Player Manager"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/manager_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Roll Dice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/coin_button"
+        android:layout_below="@+id/manager_button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Timer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/timer_button"
+        android:layout_below="@+id/coin_button"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
