@@ -17,7 +17,7 @@
             android:id="@+id/new_player_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="layer/Team Name"
+            android:hint="Player/Team Name"
            />
 
         <Button
