@@ -16,11 +16,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Player" />
-        <activity android:name=".rff" />
-        <activity
-            android:name=".nav"
-            android:label="@string/title_activity_nav"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RollDice"></activity>
     </application>
 
