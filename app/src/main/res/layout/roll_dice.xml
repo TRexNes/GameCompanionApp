@@ -40,13 +40,12 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="TextView"
+        android:text="1"
         android:id="@+id/textView2"
-        android:layout_above="@+id/button"
-        android:layout_toStartOf="@+id/add_dice_button"
         android:layout_width="150dp"
-        tools:text="1"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
         android:textAlignment="center"
-        android:layout_height="35dp" />
+        android:layout_height="35dp"
+        android:layout_above="@+id/button"
+        android:layout_toStartOf="@+id/add_dice_button" />
 </RelativeLayout>

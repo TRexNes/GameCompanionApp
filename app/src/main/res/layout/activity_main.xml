@@ -24,7 +24,8 @@
         android:layout_height="60dp"
         android:id="@+id/coin_button"
         android:layout_below="@+id/manager_button"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="openRollDice"/>
 
     <Button
         android:text="Timer"
