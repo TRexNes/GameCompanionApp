@@ -16,7 +16,8 @@
         android:layout_height="60dp"
         android:id="@+id/manager_button"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="openPlayer"/>
 
     <Button
         android:text="Roll Dice"
