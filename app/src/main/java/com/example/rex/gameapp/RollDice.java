@@ -2,6 +2,8 @@ package com.example.rex.gameapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 public class RollDice extends AppCompatActivity {
 
@@ -15,20 +17,20 @@ public class RollDice extends AppCompatActivity {
         numDice = 2;
     }
 
-    void rollDice() {
+    public void rollDice() {
         // Loop through and random for each numDice.
         // Display each result to the gridView.
     }
 
-    int getNumDice() {
+    public int getNumDice() {
         return numDice;
     }
 
-    void addDie() {
+    public void addDie(View view) {
         numDice++;
     }
 
-    void removeDie() {
+    public void removeDie(View view) {
         numDice--;
     }
 }

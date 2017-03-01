@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Player" />
-        <activity android:name=".RollDice"></activity>
+        <activity android:name=".RollDice" />
+        <activity android:name=".Timer"></activity>
     </application>
 
 </manifest>

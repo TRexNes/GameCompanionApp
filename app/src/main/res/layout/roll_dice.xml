@@ -29,7 +29,8 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:id="@+id/remove_dice_button"
-        android:layout_above="@+id/button" />
+        android:layout_above="@+id/button"
+        android:onClick="removeDie"/>
 
     <Button
         android:text="Add"
@@ -37,7 +38,8 @@
         android:layout_height="50dp"
         android:id="@+id/add_dice_button"
         android:layout_above="@+id/button"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="addDie"/>
 
     <TextView
         android:text="@string/numDice"
