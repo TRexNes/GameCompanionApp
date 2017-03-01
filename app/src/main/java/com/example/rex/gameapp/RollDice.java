@@ -19,4 +19,16 @@ public class RollDice extends AppCompatActivity {
         // Loop through and random for each numDice.
         // Display each result to the gridView.
     }
+
+    int getNumDice() {
+        return numDice;
+    }
+
+    void addDie() {
+        numDice++;
+    }
+
+    void removeDie() {
+        numDice--;
+    }
 }
