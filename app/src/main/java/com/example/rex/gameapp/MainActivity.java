@@ -8,7 +8,6 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     // This is a test of the push.
-
     //Testing again
 
     @Override
