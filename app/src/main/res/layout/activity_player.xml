@@ -7,67 +7,100 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <LinearLayout
-        android:id="@+id/new_player_controls"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/number_of_players"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginBottom="16dp"
+        android:text="Number of Players/teams"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
 
-        <EditText
-            android:id="@+id/new_player_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Player/Team Name"
-           />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/number_of_players"
+        android:id="@+id/inc_dec_players"
+        android:layout_centerHorizontal="true">
 
         <Button
-            android:id="@+id/add_player_button"
-            android:layout_width="match_parent"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="decrement"
+            android:text="-" />
+
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:enabled="false"
-            android:text="Add Player/Team"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="0"
             android:textColor="@android:color/black"
-            />
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="increment"
+            android:text="+" />
+
     </LinearLayout>
-
-
-    <ListView
-        android:id="@+id/players_list"
-        android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:layout_below="@id/new_player_controls"
-        android:layout_marginBottom="48dp"
-        android:layout_marginTop="5dp"
-        android:divider="#CCCCCC"
-        android:dividerHeight="2dp" />
-
 
     <Button
         android:id="@+id/done_managing_players"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="2dp"
         android:text="Done"
         />
 
-    <Button
-        android:text="Remove Player"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/new_player_controls"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:layout_above="@+id/done_managing_players"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="13dp" />
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/inc_dec_players">
+
+        <EditText
+            android:id="@+id/new_player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player/Team Name"
+            android:layout_margin="40dp"
+            />
+
+        <Button
+            android:id="@+id/add_player_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:enabled="false"
+            android:text="Add Player/Team"
+            android:textColor="@android:color/black"
+            />
+        <Button
+            android:text="Remove Player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_marginBottom="11dp"
+            android:layout_above="@+id/done_managing_players"
+            android:layout_alignStart="@+id/done_managing_players" />
+
+
+    </LinearLayout>
 
     <Button
         android:text="Reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:layout_alignBaseline="@+id/button3"
-        android:layout_alignBottom="@+id/button3"
-        android:layout_alignEnd="@+id/done_managing_players" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
