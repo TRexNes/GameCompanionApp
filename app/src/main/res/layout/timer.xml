@@ -10,4 +10,56 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.rex.gameapp.Timer">
 
+    <TextView
+        android:text="Time's up!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="36sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startButton"
+        android:layout_marginBottom="12dp"
+        android:onClick="startTimer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startButton"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/buttTimeUp"
+        android:onClick="addTime" />
+
+    <Button
+        android:text="Less"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttTimeDown"
+        android:layout_above="@+id/startButton"
+        android:layout_alignParentStart="true"
+        android:textSize="14sp"
+        android:onClick="removeTime" />
+
+    <TextView
+        android:text="30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeSelect"
+        android:layout_alignTop="@+id/buttTimeDown"
+        android:layout_alignStart="@+id/textView"
+        android:layout_above="@+id/startButton"
+        android:layout_toStartOf="@+id/buttTimeUp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        android:textAlignment="center" />
 </RelativeLayout>
