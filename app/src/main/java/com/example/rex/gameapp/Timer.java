@@ -17,7 +17,9 @@ public class Timer extends AppCompatActivity {
         numSeconds = 30;
     }
 
-    public void startTimer() {
+    public void startTimer(View view) {
+        checkTimer();
+
         int time = numSeconds;
         time = time * 1000;
 
@@ -32,6 +34,11 @@ public class Timer extends AppCompatActivity {
                 textView.setText("Time's up!");
             }
         }.start();
+    }
+
+    private void checkTimer() {
+        //Fill in to fix multi-timer bug
+        //NOTE: Check why the text field moves when you start the timer
     }
 
     public void addTime(View view) {
