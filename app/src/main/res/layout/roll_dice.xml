@@ -11,12 +11,13 @@
     tools:context="com.example.rex.gameapp.RollDice">
 
     <Button
-        android:text="Roll!"
+        android:text="@string/roll"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="rollDice" />
 
     <Button
         android:text="@string/Remove"
@@ -48,7 +49,8 @@
     <TextView
         android:id="@+id/Die3"
         android:text="@string/Die3"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
@@ -57,7 +59,8 @@
     <TextView
         android:id="@+id/Die5"
         android:text="@string/Die5"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignBaseline="@+id/Die4"
@@ -67,7 +70,8 @@
     <TextView
         android:id="@+id/Die7"
         android:text="@string/Die7"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@+id/Die4"
@@ -76,7 +80,8 @@
     <TextView
         android:id="@+id/Die9"
         android:text="@string/Die9"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@+id/Die5"
@@ -85,7 +90,8 @@
     <TextView
         android:id="@+id/Die8"
         android:text="@string/Die8"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@+id/Die5"
@@ -94,7 +100,8 @@
     <TextView
         android:id="@+id/Die6"
         android:text="@string/Die6"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@+id/Die3"
@@ -103,7 +110,8 @@
     <TextView
         android:id="@+id/Die1"
         android:text="@string/Die1"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
@@ -112,7 +120,8 @@
     <TextView
         android:id="@+id/Die4"
         android:text="@string/Die4"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@+id/Die1"
@@ -121,7 +130,8 @@
     <TextView
         android:id="@+id/Die2"
         android:text="@string/Die2"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
