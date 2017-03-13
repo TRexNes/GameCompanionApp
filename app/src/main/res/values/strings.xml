@@ -21,4 +21,6 @@
     <string name="Add">Add</string>
     <string name="Remove">Remove</string>
     <string name="roll">Roll!</string>
+    <string name="times_up">Time\'s up!</string>
+    <string name="start">Start</string>
 </resources>

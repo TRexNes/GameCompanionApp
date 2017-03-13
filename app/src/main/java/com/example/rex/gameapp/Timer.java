@@ -8,6 +8,8 @@ import android.view.View;
 
 public class Timer extends AppCompatActivity {
     private int numSeconds;
+    private boolean isRunning = false;
+    CountDownTimer timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,27 +20,31 @@ public class Timer extends AppCompatActivity {
     }
 
     public void startTimer(View view) {
-        checkTimer();
+        if (isRunning)
+            resetTimer();
 
         int time = numSeconds;
         time = time * 1000;
 
-        new CountDownTimer(time, 1000) {
+        timer = new CountDownTimer(time, 1000) {
 
             TextView textView = (TextView) findViewById(R.id.textView);
             public void onTick(long millisUntilFinished) {
                 textView.setText("" + millisUntilFinished / 1000);
+
+                isRunning = true;
             }
 
             public void onFinish() {
                 textView.setText("Time's up!");
+
+                isRunning = false;
             }
         }.start();
     }
 
-    private void checkTimer() {
-        //Fill in to fix multi-timer bug
-        //NOTE: Check why the text field moves when you start the timer
+    private void resetTimer() {
+        timer.cancel();
     }
 
     public void addTime(View view) {

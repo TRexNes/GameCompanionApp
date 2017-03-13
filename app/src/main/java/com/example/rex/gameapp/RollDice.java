@@ -105,10 +105,6 @@ public class RollDice extends AppCompatActivity {
         textView.setText("~");
     }
 
-    public int getNumDice() {
-        return numDice;
-    }
-
     public void addDie(View view) {
         numDice++;
         if (numDice > 9)
