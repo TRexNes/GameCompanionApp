@@ -7,6 +7,21 @@ import android.widget.TextView;
 import android.view.View;
 
 
+/**
+ *
+ *  Timer Activity
+ *
+ *  This activity will get the timer duration from the user
+ *  and count down
+ *
+ * @ author  Adam Fletcher
+ * @ author  Mattew Wilcox
+ * @ author  Rex Nesbit
+ *
+ * @ Version 1.0
+ */
+
+
 public class Timer extends AppCompatActivity {
     private int numSeconds;
     private boolean isRunning = false;
@@ -20,6 +35,10 @@ public class Timer extends AppCompatActivity {
         numSeconds = 30;
     }
 
+    /**
+     *  function will start timer on click
+     * @param view
+     */
     public void startTimer(View view) {
         if (isRunning)
             resetTimer();
@@ -48,6 +67,10 @@ public class Timer extends AppCompatActivity {
         timer.cancel();
     }
 
+    /**
+     * user can add time to timer
+     * @param view
+     */
     public void addTime(View view) {
         numSeconds++;
 
@@ -55,6 +78,10 @@ public class Timer extends AppCompatActivity {
         textView.setText("" + numSeconds);
     }
 
+    /**
+     * user can remove time to timer
+     * @param view
+     */
     public void removeTime(View view) {
         numSeconds--;
         if (numSeconds < 1)

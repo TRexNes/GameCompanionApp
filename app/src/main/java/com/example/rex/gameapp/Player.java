@@ -19,6 +19,20 @@ import static android.R.id.list;
 import static com.example.rex.gameapp.R.id.new_player_name;
 import static com.example.rex.gameapp.R.id.textView;
 
+/**
+ *
+ *  Activity Player
+ *
+ *  This activity will get the number of players from the user
+ *  It will also get the names of each player
+ *
+ * @ author  Adam Fletcher
+ * @ author  Mattew Wilcox
+ * @ author  Rex Nesbit
+ *
+ * @ Version 1.0
+ */
+
 public class Player extends AppCompatActivity {
 
     int numPlayers = 0;
@@ -30,8 +44,8 @@ public class Player extends AppCompatActivity {
     }
 
     /**
-     *
-     * @param view will allow user to increase number of players
+     * will allow user to increase number of players
+     * @param view
      */
     public void increment(View view) {
 
@@ -40,8 +54,8 @@ public class Player extends AppCompatActivity {
     }
 
     /**
-     *
-     * @param view allow user to decrese numbers of players
+     * allow user to decrese numbers of players
+     * @param view
      */
     public void decrement(View view) {
 
@@ -50,8 +64,9 @@ public class Player extends AppCompatActivity {
     }
 
     /**
+     * displays the quatnity of players chosen by user
      *
-     * @param numPlayers displays the quatnity of players chosen by user
+     * @param numPlayers
      */
     private void displayNumPlay(int numPlayers) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
