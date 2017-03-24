@@ -15,10 +15,6 @@ import android.view.View;
  * @since       1.0
  */
 public class MainActivity extends AppCompatActivity {
-
-    // This is a test of the push.
-    //Testing again
-
     /**
      * Generates the initial activity's state
      *

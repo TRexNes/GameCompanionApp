@@ -23,4 +23,7 @@
     <string name="roll">Roll!</string>
     <string name="times_up">Time\'s up!</string>
     <string name="start">Start</string>
+    <string name="AddTime">+</string>
+    <string name="RemoveTime">-</string>
+    <string name="stop">Stop</string>
 </resources>

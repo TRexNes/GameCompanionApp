@@ -15,7 +15,7 @@ import android.view.View;
  *  and count down
  *
  * @ author  Adam Fletcher
- * @ author  Mattew Wilcox
+ * @ author  Matthew Wilcox
  * @ author  Rex Nesbit
  *
  * @ Version 1.0
@@ -50,7 +50,7 @@ public class Timer extends AppCompatActivity {
 
             TextView textView = (TextView) findViewById(R.id.textView);
             public void onTick(long millisUntilFinished) {
-                textView.setText("" + millisUntilFinished / 1000);
+                textView.setText(convertTime((int)(millisUntilFinished / 1000)));
 
                 isRunning = true;
             }
@@ -67,27 +67,115 @@ public class Timer extends AppCompatActivity {
         timer.cancel();
     }
 
+    public void resetTimer(View view) {
+        timer.cancel();
+    }
+
     /**
      * user can add time to timer
      * @param view
      */
-    public void addTime(View view) {
+    public void addSecond(View view) {
         numSeconds++;
 
-        TextView textView = (TextView) findViewById(R.id.timeSelect);
-        textView.setText("" + numSeconds);
+        String time = convertTime(numSeconds);
+
+        displayDemo(time);
+    }
+    public void addTenSeconds(View view) {
+        numSeconds = numSeconds + 10;
+
+        String time = convertTime(numSeconds);
+
+        displayDemo(time);
+    }
+    public void addMinute(View view) {
+        numSeconds = numSeconds + 60;
+
+        String time = convertTime(numSeconds);
+
+        displayDemo(time);
+    }
+    public void addTenMinutes(View view) {
+        numSeconds = numSeconds + 600;
+
+        String time = convertTime(numSeconds);
+
+        displayDemo(time);
     }
 
     /**
      * user can remove time to timer
      * @param view
      */
-    public void removeTime(View view) {
+    public void removeSecond(View view) {
         numSeconds--;
         if (numSeconds < 1)
             numSeconds = 1;
 
-        TextView textView = (TextView) findViewById(R.id.timeSelect);
-        textView.setText("" + numSeconds);
+        String time = convertTime(numSeconds);
+
+        displayDemo(time);
     }
+
+    public void removeTenSeconds(View view) {
+        numSeconds -= 10;
+        if (numSeconds < 1)
+            numSeconds = 1;
+
+        String time = convertTime(numSeconds);
+
+        displayDemo(time);
+    }
+
+    public void removeMinute(View view) {
+        numSeconds -= 60;
+        if (numSeconds < 1)
+            numSeconds = 1;
+
+        String time = convertTime(numSeconds);
+
+        displayDemo(time);
+    }
+
+    public void removeTenMinutes(View view) {
+        numSeconds -= 600;
+        if (numSeconds < 1)
+            numSeconds = 1;
+
+        String time = convertTime(numSeconds);
+
+        displayDemo(time);
+    }
+
+    private void displayDemo(String time) {
+        TextView textView = (TextView) findViewById(R.id.timeSelect);
+        textView.setText(time);
+    }
+
+    public String convertTime(int numTime) {
+        String time;
+        int minutes1 = numTime / 60;
+        if (minutes1 > 99)
+            minutes1 = 99;
+
+        String minutes2;
+        if (minutes1 <= 9)
+            minutes2 = "0" + minutes1;
+        else
+            minutes2 = "" + minutes1;
+
+        int seconds1 = numTime % 60;
+
+        String seconds2;
+        if (seconds1 <= 9)
+            seconds2 = "0" + seconds1;
+        else
+            seconds2 = "" + seconds1;
+
+        time = minutes2 + ":" +seconds2;
+
+        return time;
+    }
+
 }
