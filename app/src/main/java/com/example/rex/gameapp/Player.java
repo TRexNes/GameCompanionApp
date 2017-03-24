@@ -37,7 +37,7 @@ import static com.example.rex.gameapp.R.id.textView;
  *  It will also get the names of each player
  *
  * @ author  Adam Fletcher
- * @ author  Mattew Wilcox
+ * @ author  Matthew Wilcox
  * @ author  Rex Nesbit
  *
  * @ Version 1.0

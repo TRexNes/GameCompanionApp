@@ -26,13 +26,16 @@ public class Timer extends AppCompatActivity {
     private int numSeconds;
     private boolean isRunning = false;
     CountDownTimer timer;
+    private int pauseTime;
+    private int trueTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.timer);
 
-        numSeconds = 30;
+        trueTime = 30;
+        numSeconds = trueTime;
     }
 
     /**
@@ -42,15 +45,21 @@ public class Timer extends AppCompatActivity {
     public void startTimer(View view) {
         if (isRunning)
             resetTimer();
+        numSeconds = trueTime;
 
-        int time = numSeconds;
-        time = time * 1000;
+        setTimer(numSeconds);
+    }
+
+    public void setTimer(int t) {
+        int time = t * 1000;
 
         timer = new CountDownTimer(time, 1000) {
 
             TextView textView = (TextView) findViewById(R.id.textView);
             public void onTick(long millisUntilFinished) {
                 textView.setText(convertTime((int)(millisUntilFinished / 1000)));
+
+                pauseTime = (int)millisUntilFinished / 1000;
 
                 isRunning = true;
             }
@@ -65,10 +74,14 @@ public class Timer extends AppCompatActivity {
 
     private void resetTimer() {
         timer.cancel();
+
+        isRunning = false;
     }
 
     public void resetTimer(View view) {
         timer.cancel();
+
+        isRunning = false;
     }
 
     /**
@@ -76,30 +89,38 @@ public class Timer extends AppCompatActivity {
      * @param view
      */
     public void addSecond(View view) {
-        numSeconds++;
+        trueTime++;
 
-        String time = convertTime(numSeconds);
+        numSeconds = trueTime;
+
+        String time = convertTime(trueTime);
 
         displayDemo(time);
     }
     public void addTenSeconds(View view) {
-        numSeconds = numSeconds + 10;
+        trueTime += 10;
 
-        String time = convertTime(numSeconds);
+        numSeconds = trueTime;
+
+        String time = convertTime(trueTime);
 
         displayDemo(time);
     }
     public void addMinute(View view) {
-        numSeconds = numSeconds + 60;
+        trueTime += 60;
 
-        String time = convertTime(numSeconds);
+        numSeconds = trueTime;
+
+        String time = convertTime(trueTime);
 
         displayDemo(time);
     }
     public void addTenMinutes(View view) {
-        numSeconds = numSeconds + 600;
+        trueTime +=  600;
 
-        String time = convertTime(numSeconds);
+        numSeconds = trueTime;
+
+        String time = convertTime(trueTime);
 
         displayDemo(time);
     }
@@ -109,41 +130,49 @@ public class Timer extends AppCompatActivity {
      * @param view
      */
     public void removeSecond(View view) {
-        numSeconds--;
-        if (numSeconds < 1)
-            numSeconds = 1;
+        trueTime--;
+        if (trueTime < 1)
+            trueTime = 1;
 
-        String time = convertTime(numSeconds);
+        numSeconds = trueTime;
+
+        String time = convertTime(trueTime);
 
         displayDemo(time);
     }
 
     public void removeTenSeconds(View view) {
-        numSeconds -= 10;
-        if (numSeconds < 1)
-            numSeconds = 1;
+        trueTime -= 10;
+        if (trueTime < 1)
+            trueTime = 1;
 
-        String time = convertTime(numSeconds);
+        numSeconds = trueTime;
+
+        String time = convertTime(trueTime);
 
         displayDemo(time);
     }
 
     public void removeMinute(View view) {
-        numSeconds -= 60;
-        if (numSeconds < 1)
-            numSeconds = 1;
+        trueTime -= 60;
+        if (trueTime < 1)
+            trueTime = 1;
 
-        String time = convertTime(numSeconds);
+        numSeconds = trueTime;
+
+        String time = convertTime(trueTime);
 
         displayDemo(time);
     }
 
     public void removeTenMinutes(View view) {
-        numSeconds -= 600;
-        if (numSeconds < 1)
-            numSeconds = 1;
+        trueTime -= 600;
+        if (trueTime < 1)
+            trueTime = 1;
 
-        String time = convertTime(numSeconds);
+        numSeconds = trueTime;
+
+        String time = convertTime(trueTime);
 
         displayDemo(time);
     }
@@ -178,4 +207,11 @@ public class Timer extends AppCompatActivity {
         return time;
     }
 
+    public void resumeTimer(View view) {
+        if (!isRunning) {
+            numSeconds = pauseTime;
+
+            setTimer(pauseTime);
+        }
+    }
 }
