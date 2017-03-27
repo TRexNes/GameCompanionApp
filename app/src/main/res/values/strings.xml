@@ -23,8 +23,17 @@
     <string name="roll">Roll!</string>
     <string name="times_up">Time\'s up!</string>
     <string name="start">Start</string>
-    <string name="AddTime">+</string>
-    <string name="RemoveTime">-</string>
+    <string name="Plus">+</string>
+    <string name="Minus">-</string>
     <string name="stop">Stop</string>
     <string name="resume">Resume</string>
+
+    <string name="team_player_1">Team/Player 1\nScore: 0</string>
+    <string name="team_player_2">Team/Player 2\nScore: 0</string>
+    <string name="team_player_3">Team/Player 3\nScore: 0</string>
+    <string name="team_player_4">Team/Player 4\nScore: 0</string>
+    <string name="team_player_5">Team/Player 5\nScore: 0</string>
+    <string name="team_player_6">Team/Player 6\nScore: 0</string>
+    <string name="team_player_7">Team/Player 7\nScore: 0</string>
+    <string name="team_player_8">Team/Player 8\nScore: 0</string>
 </resources>
