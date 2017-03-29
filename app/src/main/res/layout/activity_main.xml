@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.rex.gameapp.MainActivity">
+    tools:context="com.example.rex.gameapp.MainActivity"
+    android:background="@drawable/title">
 
     <Button
         android:text="Player Manager"
@@ -17,7 +18,8 @@
         android:id="@+id/manager_button"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:onClick="openPlayer"/>
+        android:onClick="openPlayer"
+        android:background="@drawable/button"/>
 
     <Button
         android:text="Roll Dice"
@@ -26,7 +28,8 @@
         android:id="@+id/coin_button"
         android:layout_below="@+id/manager_button"
         android:layout_alignParentStart="true"
-        android:onClick="openRollDice"/>
+        android:onClick="openRollDice"
+        android:background="@drawable/button"/>
 
     <Button
         android:text="Timer"
@@ -35,6 +38,19 @@
         android:id="@+id/timer_button"
         android:layout_below="@+id/coin_button"
         android:layout_alignParentStart="true"
-        android:onClick="openTimer" />
+        android:onClick="openTimer"
+        android:background="@drawable/button"/>
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gamepiece"
+        android:layout_below="@+id/timer_button"
+        android:layout_alignParentStart="true">
+    </ImageView>
+
+
 
 </RelativeLayout>

@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.rex.gameapp.Timer">
+    tools:context="com.example.rex.gameapp.Timer"
+    android:background="@drawable/title">
 
     <Button
         android:id="@+id/button3"
@@ -18,7 +19,8 @@
         android:layout_below="@+id/buttRemoveSec"
         android:layout_marginTop="40dp"
         android:onClick="startTimer"
-        android:text="@string/start" />
+        android:text="@string/start"
+        android:background="@drawable/button"/>
 
     <TextView
         android:text="@string/times_up"
@@ -29,7 +31,7 @@
         android:textSize="36sp"
         android:layout_marginTop="57dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/stopButton"
@@ -38,7 +40,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/button3"
         android:onClick="resetTimer"
-        android:text="@string/stop" />
+        android:text="@string/stop"
+        android:background="@drawable/button"/>
 
     <Button
         android:text="@string/AddTime"
@@ -47,7 +50,8 @@
         android:id="@+id/buttAddSec"
         android:onClick="addSecond"
         android:layout_above="@+id/timeSelect"
-        android:layout_alignEnd="@+id/timeSelect" />
+        android:layout_alignEnd="@+id/timeSelect"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:text="@string/AddTime"
@@ -56,7 +60,8 @@
         android:id="@+id/buttAddSecs"
         android:onClick="addTenSeconds"
         android:layout_above="@+id/timeSelect"
-        android:layout_toStartOf="@+id/buttAddSec" />
+        android:layout_toStartOf="@+id/buttAddSec"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:text="@string/AddTime"
@@ -65,7 +70,8 @@
         android:id="@+id/buttAddMin"
         android:onClick="addMinute"
         android:layout_above="@+id/timeSelect"
-        android:layout_toEndOf="@+id/buttAddMins" />
+        android:layout_toEndOf="@+id/buttAddMins"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:text="@string/AddTime"
@@ -74,7 +80,8 @@
         android:id="@+id/buttAddMins"
         android:onClick="addTenMinutes"
         android:layout_above="@+id/timeSelect"
-        android:layout_alignStart="@+id/timeSelect" />
+        android:layout_alignStart="@+id/timeSelect"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:text="@string/RemoveTime"
@@ -84,7 +91,8 @@
         android:textSize="14sp"
         android:onClick="removeSecond"
         android:layout_below="@+id/timeSelect"
-        android:layout_alignEnd="@+id/timeSelect" />
+        android:layout_alignEnd="@+id/timeSelect"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:text="@string/RemoveTime"
@@ -94,7 +102,8 @@
         android:textSize="14sp"
         android:onClick="removeTenSeconds"
         android:layout_below="@+id/timeSelect"
-        android:layout_toStartOf="@+id/buttRemoveSec" />
+        android:layout_toStartOf="@+id/buttRemoveSec"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:text="@string/RemoveTime"
@@ -104,7 +113,8 @@
         android:textSize="14sp"
         android:onClick="removeMinute"
         android:layout_below="@+id/timeSelect"
-        android:layout_toEndOf="@+id/buttRemoveMins" />
+        android:layout_toEndOf="@+id/buttRemoveMins"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:text="@string/RemoveTime"
@@ -114,7 +124,8 @@
         android:textSize="14sp"
         android:onClick="removeTenMinutes"
         android:layout_below="@+id/timeSelect"
-        android:layout_alignStart="@+id/timeSelect" />
+        android:layout_alignStart="@+id/timeSelect"
+        android:background="@drawable/redbutton"/>
 
     <TextView
         android:text="00:30"

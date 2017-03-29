@@ -34,7 +34,8 @@
         android:layout_below="@+id/new_player"
         android:text="@string/Add"
         android:onClick="addPlayerName"
-        android:id="@+id/addName"/>
+        android:id="@+id/addName"
+        android:background="@drawable/button"/>
 
     <ListView
         android:layout_width="wrap_content"
@@ -50,7 +51,8 @@
         android:layout_height="50dp"
         android:id="@+id/remove_player_button"
         android:onClick="removePlayer"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"/>
 
     <Button
         android:text="@string/Add"
@@ -59,7 +61,8 @@
         android:id="@+id/add_player_button"
         android:layout_alignParentEnd="true"
         android:onClick="addPlayer"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"/>
 
     <TextView
         android:text="2"
@@ -70,6 +73,9 @@
         android:layout_height="35dp"
         android:layout_toStartOf="@id/add_player_button"
         android:layout_alignParentBottom="true"/>
+
+
+
 
 
 

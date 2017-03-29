@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.rex.gameapp.RollDice">
+    tools:context="com.example.rex.gameapp.RollDice"
+    android:background="@drawable/title">
 
     <Button
         android:text="@string/roll"
@@ -17,7 +18,8 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:onClick="rollDice" />
+        android:onClick="rollDice"
+        android:background="@drawable/button"/>
 
     <Button
         android:text="@string/Remove"
@@ -25,7 +27,8 @@
         android:layout_height="50dp"
         android:id="@+id/remove_dice_button"
         android:layout_above="@+id/button"
-        android:onClick="removeDie"/>
+        android:onClick="removeDie"
+        android:background="@drawable/button"/>
 
     <Button
         android:text="@string/Add"
@@ -34,7 +37,8 @@
         android:id="@+id/add_dice_button"
         android:layout_above="@+id/button"
         android:layout_alignParentEnd="true"
-        android:onClick="addDie"/>
+        android:onClick="addDie"
+        android:background="@drawable/button"/>
 
     <TextView
         android:text="@string/numDice"
@@ -136,4 +140,13 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dicee"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
 </RelativeLayout>
