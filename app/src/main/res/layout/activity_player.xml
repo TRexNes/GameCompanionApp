@@ -76,16 +76,70 @@
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:id="@+id/plusPlayer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player6"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/player6"
+        android:text="@string/Plus"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/plusPlayer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player5"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/player5"
+        android:text="@string/Plus"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/plusPlayer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player4"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/player4"
+        android:text="@string/Plus"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/plusPlayer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player3"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/player3"
+        android:text="@string/Plus"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/plusPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/player2"
+        android:text="@string/Plus"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
         android:id="@+id/plusPlayer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/player1"
-        android:text="@string/plus_player"
+        android:text="@string/Plus"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/minusPlayer6"
@@ -94,7 +148,7 @@
         android:layout_alignBottom="@+id/player6"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player6"
-        android:text="@string/minus_player"
+        android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -106,7 +160,7 @@
         android:layout_alignBottom="@+id/player5"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player5"
-        android:text="@string/minus_player"
+        android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -118,7 +172,7 @@
         android:layout_alignBottom="@+id/player4"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player4"
-        android:text="@string/minus_player"
+        android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -130,7 +184,7 @@
         android:layout_alignBottom="@+id/player3"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player3"
-        android:text="@string/minus_player"
+        android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -142,7 +196,7 @@
         android:layout_alignBottom="@+id/player2"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player2"
-        android:text="@string/minus_player"
+        android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -154,7 +208,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/player1"
-        android:text="@string/minus_player"
+        android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />

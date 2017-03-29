@@ -18,17 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static android.R.attr.duration;
-import static android.R.attr.name;
-import static android.R.attr.onClick;
-import static android.R.id.list;
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
-import static com.example.rex.gameapp.R.id.Players;
-import static com.example.rex.gameapp.R.id.button;
-
-import static com.example.rex.gameapp.R.id.players_list;
-import static com.example.rex.gameapp.R.id.textView;
-
 /**
  *
  *  Activity Player
