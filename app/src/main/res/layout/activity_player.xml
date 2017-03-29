@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.rex.gameapp.Player">
+    tools:context="com.example.rex.gameapp.Player"
+    android:background="@drawable/button">
 
     <TextView
         android:id="@+id/player6"
@@ -84,7 +85,8 @@
         android:layout_toEndOf="@+id/player6"
         android:text="@string/Plus"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/plusPlayer5"
@@ -95,7 +97,8 @@
         android:layout_toEndOf="@+id/player5"
         android:text="@string/Plus"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/plusPlayer4"
@@ -106,7 +109,8 @@
         android:layout_toEndOf="@+id/player4"
         android:text="@string/Plus"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/plusPlayer3"
@@ -117,7 +121,8 @@
         android:layout_toEndOf="@+id/player3"
         android:text="@string/Plus"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/plusPlayer2"
@@ -128,7 +133,8 @@
         android:layout_toEndOf="@+id/player2"
         android:text="@string/Plus"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/plusPlayer1"
@@ -139,7 +145,8 @@
         android:layout_toEndOf="@+id/player1"
         android:text="@string/Plus"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/minusPlayer6"
@@ -151,7 +158,8 @@
         android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minusPlayer5"
@@ -163,7 +171,8 @@
         android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minusPlayer4"
@@ -175,7 +184,8 @@
         android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minusPlayer3"
@@ -187,7 +197,8 @@
         android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minusPlayer2"
@@ -199,7 +210,8 @@
         android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minusPlayer1"
@@ -211,6 +223,7 @@
         android:text="@string/Minus"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@drawable/redbutton"/>
 
 </RelativeLayout>
