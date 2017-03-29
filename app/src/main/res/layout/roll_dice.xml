@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.rex.gameapp.RollDice"
-    android:background="@drawable/title">
+    android:background="@drawable/button">
 
     <Button
         android:text="@string/roll"
