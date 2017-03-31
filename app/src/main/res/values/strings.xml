@@ -28,12 +28,29 @@
     <string name="stop">Stop</string>
     <string name="resume">Resume</string>
 
-    <string name="team_player_1">Team/Player 1\nScore: 0</string>
-    <string name="team_player_2">Team/Player 2\nScore: 0</string>
-    <string name="team_player_3">Team/Player 3\nScore: 0</string>
-    <string name="team_player_4">Team/Player 4\nScore: 0</string>
-    <string name="team_player_5">Team/Player 5\nScore: 0</string>
-    <string name="team_player_6">Team/Player 6\nScore: 0</string>
-    <string name="team_player_7">Team/Player 7\nScore: 0</string>
-    <string name="team_player_8">Team/Player 8\nScore: 0</string>
+    <string name="team_player_1">1 Player\nScore: 0</string>
+    <string name="team_player_2">2 Player\nScore: 0</string>
+    <string name="team_player_3">3 Player\nScore: 0</string>
+    <string name="team_player_4">4 Player\nScore: 0</string>
+    <string name="team_player_5">5 Player\nScore: 0</string>
+    <string name="team_player_6">6 Player\nScore: 0</string>
+
+    <string-array name="players_array">
+        <item>Player 1</item>
+        <item>Player 2</item>
+        <item>Player 3</item>
+        <item>Player 4</item>
+        <item>Player 5</item>
+        <item>Player 6</item>
+    </string-array>
+
+    <string-array name="score_array">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>1000</item>
+        <item>10000</item>
+    </string-array>
 </resources>
