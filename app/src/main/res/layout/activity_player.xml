@@ -136,7 +136,8 @@
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/player6"
         android:text="+"
-        android:onClick="editScore"/>
+        android:onClick="editScore"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/addP5"
@@ -146,7 +147,8 @@
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/player5"
         android:text="+"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/addP4"
@@ -156,7 +158,8 @@
         android:layout_alignTop="@+id/player4"
         android:layout_toEndOf="@+id/player4"
         android:text="+"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/addP3"
@@ -166,7 +169,8 @@
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/player3"
         android:text="+"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/addP2"
@@ -176,7 +180,8 @@
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/player2"
         android:text="+"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/greenbutton"/>
 
     <Button
         android:id="@+id/minP6"
@@ -186,7 +191,8 @@
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player6"
         android:text="-"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minP5"
@@ -196,7 +202,8 @@
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player5"
         android:text="-"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minP4"
@@ -206,7 +213,8 @@
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player4"
         android:text="-"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minP3"
@@ -216,7 +224,8 @@
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player3"
         android:text="-"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minP2"
@@ -226,7 +235,8 @@
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player2"
         android:text="-"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/minP1"
@@ -236,7 +246,8 @@
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/player1"
         android:text="-"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:id="@+id/addP1"
@@ -246,7 +257,8 @@
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/player1"
         android:text="+"
-        android:onClick="editScore" />
+        android:onClick="editScore"
+        android:background="@drawable/greenbutton"/>
 
     <TextView
         android:id="@+id/editScoreCaption"

@@ -28,7 +28,7 @@
         android:id="@+id/remove_dice_button"
         android:layout_above="@+id/button"
         android:onClick="removeDie"
-        android:background="@drawable/button"/>
+        android:background="@drawable/redbutton"/>
 
     <Button
         android:text="@string/Add"
@@ -38,7 +38,7 @@
         android:layout_above="@+id/button"
         android:layout_alignParentEnd="true"
         android:onClick="addDie"
-        android:background="@drawable/button"/>
+        android:background="@drawable/greenbutton"/>
 
     <TextView
         android:text="@string/numDice"
